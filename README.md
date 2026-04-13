@@ -1,20 +1,9 @@
 # D365-FO-Budget-Report-DAX-BI
-D365 FO ERP Budget Data WIth DAX and BI 
+Sample Power BI budget vs Expenditure report for Microsoft D365 Finance & Operations (FO) using standardized DAX measures and dimensional modeling.
 
-### What this DAX demonstrates
+# 📊 D365-FO-Budget-Report-DAX-BI
 
-- Budget summary generation using ADDCOLUMNS + SUMMARIZE
-- Cross-table filtering using TREATAS
-- Code-wise aggregation of approved budget values
-- Filtering out zero-value budget IDs
-
-All objects are anonymized and shared for learning purposes only.
-
-
-
-# 📊 # D365-FO-Budget-Report-DAX-BI
-
-This repository provides **anonymized sample DAX patterns** for building **budget summary and budget‑vs‑expenditure reports** in **Power BI**.
+This repository provides **anonymized sample DAX patterns** for building Budget ID wise  **Budget Vs Expenditure reports** in **Power BI**.
 
 The focus of this repository is **DAX design techniques and modeling patterns**.
 
@@ -24,7 +13,7 @@ The focus of this repository is **DAX design techniques and modeling patterns**.
 
 *   Demonstrate **enterprise‑grade DAX patterns** for budget reporting
 *   Provide reference implementations for:
-    *   Budget ID wise budget summaries
+    *   Budget ID wise budget and expenditure summaries
     *   Budget aggregation
     *   Cross‑table filtering using `TREATAS`
 *   Share reusable **Power BI & DAX best practices** in a privacy‑safe manner
@@ -34,7 +23,7 @@ This repository is intended for:
 *   Power BI developers
 *   BI architects
 *   Finance & ERP reporting professionals
-*   D365 Finance (FO) reporting practitioners
+*   D365 FO reporting practitioners
 
 ***
 
@@ -80,7 +69,7 @@ The included DAX demonstrates how to generate a **Budget Summary** that:
 
 *   Groups by budget ID and date range
 *   Counts related Budget Line Items
-*   Calculates Total Budgets
+*   Calculates Budget ID wise Total Budgets and Total Expenditures 
 *   Excludes zero‑value Budget Entries
 
 This pattern is commonly used in:
@@ -120,7 +109,7 @@ For details, see:
 ## 🚀 How to Use This Repository
 
 1.  Review the DAX patterns in the `dax/` folder
-2.  Adapt the logic to your own **dimension and fact tables**
+2.  Adapt the logic to your own **Budget table and fact tables**
 3.  Replace abstracted names with your model objects
 4.  Ensure any real implementation complies with your organization’s data governance and security policies
 
@@ -133,7 +122,6 @@ D365 FO Technical Expert | CE | Power Platform | Solution Architect |
 FinTech & Banking | Trading Community | HealthTech & Research
 
 Specializing in D365 FO Technical, Power BI, DAX, and D365 Finance reporting
-
 
 ***
 
