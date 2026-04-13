@@ -1,0 +1,45 @@
+/*
+Purpose : Sample DAX pattern for budget summary reporting
+Note    : All table/column names are anonymized
+Data    : Fully anonymized, synthetic structure
+Scope   : Demonstrates ADDCOLUMNS + TREATAS usage
+Author  : Syfur Rahaman Shohag
+Date    : Feb, 2026
+*/
+
+BudgetSummary :=
+FILTER (
+    ADDCOLUMNS (
+        SUMMARIZE (
+            DimBudgetTable,
+            DimBudgetTable[BudgetID],
+            DimBudgetTable[BudgetStartDate],
+            DimBudgetTable[BudgetEndDate]
+        ),
+        "CountItems",
+            CALCULATE (
+                COUNT ( FactBudgetLineTable[LineNumber] ),
+                TREATAS (
+                    VALUES ( DimBudgetTable[BudgetID] ),
+                    FactBudgetLineTable[BudgetID]
+                )
+            ),
+        "SumBudgetAmount",
+            CALCULATE (
+                SUM ( FactBudgetLineTable[BudgetAmount] ),
+                TREATAS (
+                    VALUES ( DimBudgetTable[BudgetID] ),
+                    FactBudgetLineTable[BudgetID]
+                )
+            ),
+        "SumBudgetAmount",
+            CALCULATE (
+                SUM ( FactBudgetLineTable[ExpenditureAmount] ),
+                TREATAS (
+                    VALUES ( DimBudgetTable[BudgetID] ),
+                    FactBudgetLineTable[BudgetID]
+                )
+            )
+    ),
+    [SumBudgetAmount] > 0
+)
