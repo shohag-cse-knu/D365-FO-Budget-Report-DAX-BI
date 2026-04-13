@@ -54,12 +54,15 @@ All examples follow **star‑schema‑friendly** DAX patterns.
 
 The DAX patterns assume a simplified star schema:
 
+***
+
 DimBudgetTable
     |
     | (1:N via BudgetID)
     |
 FactBudgetLineTable
 
+***
 
 
 ### Abstracted Tables
@@ -73,7 +76,7 @@ FactBudgetLineTable
 
 ## 🔍 Example Use Case
 
-The included DAX demonstrates how to generate a **Budget Summary Table** that:
+The included DAX demonstrates how to generate a **Budget Summary** that:
 
 *   Groups by budget ID and date range
 *   Counts related Budget Line Items
@@ -126,8 +129,8 @@ For details, see:
 ## 👤 Author
 
 **Syfur Rahaman Shohag**  
-D365 FO Technical Expert | CE | Power Platform | Solution Architect | Root Cause Analyst | Performance Specialist | ML Expert  
-ERP | FinTech & Banking Platforms | Trading Community Systems | HealthTech & Research
+D365 FO Technical Expert | CE | Power Platform | Solution Architect |
+FinTech & Banking | Trading Community | HealthTech & Research
 
 Specializing in D365 FO Technical, Power BI, DAX, and D365 Finance reporting
 
