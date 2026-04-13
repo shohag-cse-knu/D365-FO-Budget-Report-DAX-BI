@@ -1,14 +1,8 @@
-# D365-FO-Budget-Report-DAX-BI
-Sample Power BI budget vs Expenditure report for Microsoft D365 Finance & Operations (FO) using standardized DAX measures and dimensional modeling.
-
 # 📊 D365-FO-Budget-Report-DAX-BI
+Sample Power BI **Budget vs Expenditure report** for Microsoft D365 Finance & Operations (FO)  using standardized **Anonymized Sample DAX Patterns**.
 
-This repository provides **anonymized sample DAX patterns** for building Budget ID wise  **Budget Vs Expenditure reports** in **Power BI**.
-
-The focus of this repository is **DAX design techniques and modeling patterns**.
-
+This repository is dedicated to learning **DAX Design Techniques and Modeling Patterns**.
 ***
-
 ## 🎯 Purpose of This Repository
 
 *   Demonstrate **enterprise‑grade DAX patterns** for budget reporting
@@ -24,7 +18,6 @@ This repository is intended for:
 *   BI architects
 *   Finance & ERP reporting professionals
 *   D365 FO reporting practitioners
-
 ***
 
 ## 🧠 What This Repository Demonstrates
