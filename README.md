@@ -5,12 +5,12 @@ This repository is dedicated to learning **DAX Design Techniques and Modeling Pa
 ***
 ## 🎯 Purpose of This Repository
 
-*   Demonstrate **enterprise‑grade DAX patterns** for budget reporting
+*   Demonstrate **Enterprise‑Grade DAX Patterns** for budget reporting
 *   Provide reference implementations for:
-    *   Budget ID wise budget and expenditure summaries
-    *   Budget aggregation
-    *   Cross‑table filtering using `TREATAS`
-*   Share reusable **Power BI & DAX best practices** in a privacy‑safe manner
+    *   Budget ID wise Budget and Expenditure Summaries
+    *   Budget Aggregation
+    *   Cross‑Table filtering using `TREATAS`
+*   Share reusable **Power BI & DAX Best Practices** in a privacy‑safe manner
 
 This repository is intended for:
 
